@@ -1,0 +1,115 @@
+{
+    "components": [
+        "topEntity"
+    ],
+    "dependencies": {
+        "transitive": []
+    },
+    "domains": {
+        "HSystem": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Asynchronous",
+            "reset_polarity": "ActiveLow"
+        },
+        "IntelSystem": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Asynchronous",
+            "reset_polarity": "ActiveHigh"
+        },
+        "System": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Asynchronous",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Synchronous",
+            "reset_polarity": "ActiveHigh"
+        }
+    },
+    "files": [
+        {
+            "name": "topEntity_shim.cpp",
+            "sha256": "460702d8afc7479b65dad3acb826f56baf7e34f11fea519fb6f597a0c8340150"
+        },
+        {
+            "name": "topEntity.sdc",
+            "sha256": "acd9f4c52c9b21289cd81f7cb6f6471df62ae940c8be213535ba821222b66329"
+        },
+        {
+            "name": "topEntity.v",
+            "sha256": "b1c891f35f30d77ddf76db20c9d32d7f7a285ab21beb04e7d89d61a8ee8a574e"
+        }
+    ],
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "0f4cb3ed92faa5081cf54e1ce1acb99329dbf49bd23b17df8d39159f2d9040f4",
+    "top_component": {
+        "name": "topEntity",
+        "ports_flat": [
+            {
+                "direction": "in",
+                "domain": "HSystem",
+                "is_clock": true,
+                "name": "c$$d",
+                "type_name": "",
+                "width": 1
+            },
+            {
+                "direction": "in",
+                "domain": "HSystem",
+                "is_clock": false,
+                "name": "c$$d_0",
+                "type_name": "",
+                "width": 1
+            },
+            {
+                "direction": "in",
+                "domain": "HSystem",
+                "is_clock": false,
+                "name": "c$$d_1",
+                "type_name": "",
+                "width": 1
+            },
+            {
+                "direction": "in",
+                "is_clock": false,
+                "name": "eta2_0",
+                "type_name": "[7:0]",
+                "width": 8
+            },
+            {
+                "direction": "in",
+                "is_clock": false,
+                "name": "eta2_1",
+                "type_name": "[7:0]",
+                "width": 8
+            },
+            {
+                "direction": "in",
+                "is_clock": false,
+                "name": "eta2_2",
+                "type_name": "[3:0]",
+                "width": 4
+            },
+            {
+                "direction": "out",
+                "is_clock": false,
+                "name": "result",
+                "type_name": "[7:0]",
+                "width": 8
+            }
+        ]
+    },
+    "version": "unstable"
+}

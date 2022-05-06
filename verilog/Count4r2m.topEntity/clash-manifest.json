@@ -1,0 +1,94 @@
+{
+    "components": [
+        "topEntity"
+    ],
+    "dependencies": {
+        "transitive": []
+    },
+    "domains": {
+        "HSystem": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Asynchronous",
+            "reset_polarity": "ActiveLow"
+        },
+        "IntelSystem": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Asynchronous",
+            "reset_polarity": "ActiveHigh"
+        },
+        "System": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Asynchronous",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Synchronous",
+            "reset_polarity": "ActiveHigh"
+        }
+    },
+    "files": [
+        {
+            "name": "topEntity_shim.cpp",
+            "sha256": "460702d8afc7479b65dad3acb826f56baf7e34f11fea519fb6f597a0c8340150"
+        },
+        {
+            "name": "topEntity.sdc",
+            "sha256": "acd9f4c52c9b21289cd81f7cb6f6471df62ae940c8be213535ba821222b66329"
+        },
+        {
+            "name": "topEntity.v",
+            "sha256": "1732be0926b9c10414fd82aa23c4100bc750297cac669259bb621ea56dfc1793"
+        }
+    ],
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "d7cf9ac968cc0ea534b225f8b96d55bfe6653a4f868a4f2e500e3c0d343eeab7",
+    "top_component": {
+        "name": "topEntity",
+        "ports_flat": [
+            {
+                "direction": "in",
+                "domain": "HSystem",
+                "is_clock": true,
+                "name": "c$$d",
+                "type_name": "",
+                "width": 1
+            },
+            {
+                "direction": "in",
+                "domain": "HSystem",
+                "is_clock": false,
+                "name": "c$$d_0",
+                "type_name": "",
+                "width": 1
+            },
+            {
+                "direction": "in",
+                "domain": "HSystem",
+                "is_clock": false,
+                "name": "c$$d_1",
+                "type_name": "",
+                "width": 1
+            },
+            {
+                "direction": "out",
+                "is_clock": false,
+                "name": "s",
+                "type_name": "[3:0]",
+                "width": 4
+            }
+        ]
+    },
+    "version": "unstable"
+}

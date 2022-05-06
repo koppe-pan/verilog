@@ -1,0 +1,59 @@
+{
+    "components": [
+        "testBench"
+    ],
+    "dependencies": {
+        "transitive": []
+    },
+    "domains": {
+        "IntelSystem": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Asynchronous",
+            "reset_polarity": "ActiveHigh"
+        },
+        "System": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Asynchronous",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "active_edge": "Rising",
+            "init_behavior": "Defined",
+            "period": 10000,
+            "reset_kind": "Synchronous",
+            "reset_polarity": "ActiveHigh"
+        }
+    },
+    "files": [
+        {
+            "name": "testBench_shim.cpp",
+            "sha256": "6295f6926f2f54ac4f20bcfc0354a28bf967cff2f34f5c6e98f3f59dc35dca86"
+        },
+        {
+            "name": "testBench.v",
+            "sha256": "a2cdb41beca5f01e91e75e01c8a9193dbac36bc48e1a2b95e0b31308ee6539f4"
+        }
+    ],
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "d0702c7ea190cd9347ef5a75f92846fd8183316939bff1ac01859d76b9d7f3e4",
+    "top_component": {
+        "name": "testBench",
+        "ports_flat": [
+            {
+                "direction": "out",
+                "is_clock": false,
+                "name": "result",
+                "type_name": "",
+                "width": 1
+            }
+        ]
+    },
+    "version": "unstable"
+}
